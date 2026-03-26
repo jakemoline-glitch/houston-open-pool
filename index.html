@@ -583,7 +583,7 @@
                 let count=0;
                 data.live_stats.forEach(player=>{
                     const dgName=player.player_name;
-                    const score=player.total_to_par;
+                    const score=player.total;
                     let formatted=dgName;
                     if(dgName&&dgName.includes(',')){const parts=dgName.split(',').map(p=>p.trim());formatted=`${parts[1]} ${parts[0]}`;}
                     const match=all.find(g=>g.toLowerCase()===formatted.toLowerCase());
