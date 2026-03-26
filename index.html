@@ -364,25 +364,19 @@
             group4: ['Rasmus Hojgaard', 'Nico Echavarria', 'Ryan Fox', 'Matthieu Pavon'],
             group5: ['Davis Thompson', 'Nick Dunlap', 'Aldrich Potgieter', 'Karl Vilips'],
             group6: ['Gary Woodland', 'Jason Day', 'Adam Scott', 'Harris English'],
-            wildcard: []
+            wildcard: [
+                'Stephan Jaeger', 'Aaron Rai', 'Taylor Pendrith', 'J.T. Poston',
+                'Lucas Glover', 'Austin Eckroat', 'Joe Highsmith', 'Patton Kizzire',
+                'Brice Garnett', 'Adam Schenk', 'Peter Malnati', 'Cam Davis',
+                'Ryan Gerard', 'Harry Hall', 'Garrick Higgo', 'Jhonattan Vegas',
+                'Rafael Campos', 'Ricky Castillo', 'Steven Fisk', 'Davis Riley',
+                'Matt McCarty', 'Brian Campbell', 'Michael Brennan', 'Rickie Fowler',
+                'Will Zalatoris', 'Sungjae Im', 'Eric Cole', 'Andrew Novak',
+                'Denny McCarthy', 'Si Woo Kim', 'Nick Taylor', 'Kevin Yu',
+                'Christiaan Bezuidenhout', 'Taylor Moore', 'Max Homa', 'Mackenzie Hughes',
+                'Lee Hodges', 'Adam Hadwin', 'Charley Hoffman', 'Erik van Rooyen'
+            ]
         };
-
-        // Build wildcard from all group golfers + extras, deduplicated and sorted
-        const extraWildcards = [
-            'Stephan Jaeger', 'Aaron Rai', 'Taylor Pendrith', 'J.T. Poston',
-            'Lucas Glover', 'Austin Eckroat', 'Joe Highsmith', 'Patton Kizzire',
-            'Brice Garnett', 'Adam Schenk', 'Peter Malnati', 'Cam Davis',
-            'Ryan Gerard', 'Harry Hall', 'Garrick Higgo', 'Jhonattan Vegas',
-            'Rafael Campos', 'Ricky Castillo', 'Steven Fisk', 'Davis Riley',
-            'Matt McCarty', 'Brian Campbell', 'Michael Brennan', 'Nick Dunlap',
-            'Rickie Fowler', 'Jason Day', 'Adam Scott', 'Will Zalatoris',
-            'Sungjae Im', 'Eric Cole', 'Andrew Novak', 'Denny McCarthy'
-        ];
-        golferGroups.wildcard = [...new Set([
-            ...golferGroups.group1, ...golferGroups.group2, ...golferGroups.group3,
-            ...golferGroups.group4, ...golferGroups.group5, ...golferGroups.group6,
-            ...extraWildcards
-        ])].sort();
 
         let participants = [];
         let golferScores = {};
